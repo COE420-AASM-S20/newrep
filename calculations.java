@@ -10,6 +10,7 @@ public class Calculations {
 		System.out.println("The sum is= "+ sum);
 		
 		//member_B add the feature of subtracting x from y and print the result
+		System.out.println("The subtracted value of x and y is:" + subtraction(x,y));
 		
 		//member_C add the feature of dividing x by y and print the result
 		
@@ -23,8 +24,12 @@ public class Calculations {
 	}
 	
 	public static int addition(int w, int z) {
-		int sum = w - z;
+		int sum = w + z;
 		return sum; 
+	}
+	public static int subtraction(int x, int y) {
+		int sum= x+y;
+		return sum;
 	}
 	
 	public static String welcome() {
