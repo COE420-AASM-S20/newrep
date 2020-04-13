@@ -8,31 +8,31 @@
  * @author b00066683
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class Employee extends User {
+public class item {
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	private Restaurant restaurant;
+	private Menu menu;
 
 	/** 
-	* @return the restaurant
+	* @return the menu
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Restaurant getRestaurant() {
+	public Menu getMenu() {
 		// begin-user-code
-		return restaurant;
+		return menu;
 		// end-user-code
 	}
 
 	/** 
-	* @param restaurant the restaurant to set
+	* @param menu the menu to set
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public void setRestaurant(Restaurant restaurant) {
+	public void setMenu(Menu menu) {
 		// begin-user-code
-		this.restaurant = restaurant;
+		this.menu = menu;
 		// end-user-code
 	}
 

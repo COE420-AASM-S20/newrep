@@ -8,7 +8,7 @@
  * @author b00066683
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class User {
+public class Administrator extends User {
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

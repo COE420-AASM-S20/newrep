@@ -8,7 +8,34 @@
  * @author b00066683
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class Employee extends User {
+public class Menu {
+	/** 
+	* <!-- begin-UML-doc -->
+	* <!-- end-UML-doc -->
+	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	*/
+	private Customer restaurantController;
+
+	/** 
+	* @return the restaurantController
+	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	*/
+	public Customer getRestaurantController() {
+		// begin-user-code
+		return restaurantController;
+		// end-user-code
+	}
+
+	/** 
+	* @param restaurantController the restaurantController to set
+	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	*/
+	public void setRestaurantController(Customer restaurantController) {
+		// begin-user-code
+		this.restaurantController = restaurantController;
+		// end-user-code
+	}
+
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->
@@ -41,25 +68,25 @@ public class Employee extends User {
 	* <!-- end-UML-doc -->
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	private Order order;
+	private item item;
 
 	/** 
-	* @return the order
+	* @return the item
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Order getOrder() {
+	public item getItem() {
 		// begin-user-code
-		return order;
+		return item;
 		// end-user-code
 	}
 
 	/** 
-	* @param order the order to set
+	* @param item the item to set
 	* @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public void setOrder(Order order) {
+	public void setItem(item item) {
 		// begin-user-code
-		this.order = order;
+		this.item = item;
 		// end-user-code
 	}
 }
