@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Add Restaurant</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <h1>Admin Panel</h1>
+        <ul class="nav">
+		<li><a href="AdminHome.html">Home</a></li>
+                <li><a href="Restaurants.html">View Restaurants</a></li>
+                <li><a href="Add.html">Add Restaurant</a></li>
+                <li><a href="Remove.html">Remove Restaurant</a></li>
+                <li><a class="active" href="Modify.html">Modify Restaurant</a></li>
+              </ul>
+                  <center>
+             <form class="add" method="post" action "Controller">
+                    <input type="hidden" name="requestType" value="ViewRest>
+                            <p>Please fill in this form to add a Restaurant.</p>
+                        
+                    <table>
+                        <tr>
+                            <td><label for="r-id"><strong>Restaurant Id</strong</label></td>
+                           <td> <input type="number" name="r-id" required></td>
+                        </tr>
+                        <tr>
+                                <td><label for="r-name">Restaurant Name</label></td>
+                           <td> <input type="text"  name="r-name" required></td>
+                           
+                        </tr>
+                        <tr>
+                            <td><label for="r-loc">Restaurant Location</label></td>
+                           <td> <input type="text" name="r-loc" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="r-contact">Restaurant Contact</label></td>
+                            <td><input type="tel"  name="r-contact" required></td>
+                        </tr>
+                            <hr>
+                        <tr>
+                            <td></td>
+                          <td><button type="submit" class="addbtn">Add</button></td>
+                        </tr>
+                        </table>
+            </form>
+        </center>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<ul class="nav">
+       		<li><a href="index.html">Return to Home Page </a></li>
+                <li><a href="LoginChef.html">Login as a Chef</a></li>
+                <li><a href="LoginManager.html">Login as a Restaurant Manager </a></li>
+                <li><a href="LoginAdmin.html">Login as an Admin</a></li>
+		<li><a href="LoginCustomer.html">Login as a customer</a></li>
+               
+              </ul>
+
+ <title>Login Admin</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="Style.css">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min
+.css">
+</head>
+<body>
+<div class="container">
+ <h2>Welcome to the Admin Login!</h2>
+ <form method="post" action="Controller">
+
+
+
+ <div class="form-group">
+ <label for="user">Username:</label>
+ <input type="text" class="form-control" id="username"
+placeholder="Enter username" name="username">
+ </div>
+ <div class="form-group">
+ <label for="pwd">Password:</label>
+ <input type="password" class="form-control" id="pwd"
+placeholder="Enter password" name="pswd">
+ </div>
+ <button type="submit" class="btn btn-primary">Submit</button>
+<input type="hidden" name="AccountType" value="admin">
+ <input type="hidden" name="requestType" value="login">
+ </form>
+</div>
+</body>
+</html>
