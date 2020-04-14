@@ -22,26 +22,20 @@
                 <th>Contact</th>
                 </tr>
                 <%
-                ArrayList<int> RID=new ArrayList<int>(); 
-                ArrayList<String> RName=new ArrayList<String>(); 
-                ArrayList<String> RName=new ArrayList<String>();
-                ArrayList<int> RContact=new ArrayList<int>(); 
+                ArrayList<Restaurant> RList=new ArrayList<Restaurant>(); 
+                RList=request.getAttribute("RList1");
+           
 
-                RID=request.getAttribute("RIDList");
-                RName=request.getAttribute("RNameList");
-                RLocation=request.getAttribute("RLocationList");
-                RContact=request.getAttribute("RContactList");
-
-                for ( int i =0; i < RID.size() ; i++)
+                for ( int i =0; i < RList1.size() ; i++)
                 {
 
                 %>
 
                 <tr>
-                <td> <%=RID[i]%></td>
-                <td><%=RName[i]%> </td>
-                <td> <%=RLocation[i]%></td>
-                <td> <%=RContact[i]%></td>
+                <td> <%=(RList.get(i)).getID()%></td>
+                <td><%=(RList.get(i)).getName()%> </td>
+                <td> <%=(RList.get(i)).getLocation()%></td>
+                <td> <%=(RList.get(i)).getContact()%></td>
                 <td><button class="btn-modify" onclick="viewMenu()" >View Menu</button></td>
                 </tr>
 
