@@ -10,9 +10,9 @@ public class RController {
 	
 	public static ArrayList<Restaurant> getRList()
 	{
-		//reads from fire 
+		
 	}
 	
-	public void setRList(Restaurant C)
+	public void setRList(int id, String name, String loc, int contact)
 	{//reads to file in database}
 }
