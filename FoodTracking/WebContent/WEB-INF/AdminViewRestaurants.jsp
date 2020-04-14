@@ -5,6 +5,7 @@
     </head>
     <body>
         <h1>Admin Panel</h1>
+        <% request.setAttribute("requestType","ViewRest"); %>
         <ul class="nav">
                 <li><a href="AdminHome.html">Home</a></li>
                 <li><a href="Restaurants.html">View Restaurants</a></li>
