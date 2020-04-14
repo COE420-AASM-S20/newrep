@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Style.css">
     </head>
     <body>
+       <% request.setAttribute("requestType","ViewRest"); %>
         <h1>Customer Panel</h1>
         <ul class="nav">
                 <li><a href="CustomerHome.jsp">Home</a></li>
@@ -30,23 +31,23 @@
 
         
 <%
-ArrayList<int> RID=new ArrayList<int>(); 
+ArrayList<Restaurant> RList=new ArrayList<int>(); 
 ArrayList<String> RName=new ArrayList<String>(); 
 ArrayList<String> RName=new ArrayList<String>(); 
 
-RID=request.getAttribute("RIDList");
-RName=request.getAttribute("RNameList");
-RLocation=request.getAttribute("RLocationList");
+RList=request.getAttribute("RList1");
 
-for ( int i =0; i < RID.size() ; i++)
+
+for ( int i =0; i < RList1.size() ; i++)
 {
     
 %>
 
 <tr>
-<td> <%=RID[i]%></td>
-<td><%=RName[i]%> </td>
-<td> <%=RLocation[i]%></td>
+                <td> <%=(RList.get(i)).getID()%></td>
+                <td><%=(RList.get(i)).getName()%> </td>
+                <td> <%=(RList.get(i)).getLocation()%></td>
+                <td> <%=(RList.get(i)).getContact()%></td>
 <td><button class="btn-modify" onclick="viewMenu()" >View Menu</button></td>
 </tr>
 
@@ -56,7 +57,6 @@ for ( int i =0; i < RID.size() ; i++)
 
 </table>
   
-          
                
     </body>
 </html> 
