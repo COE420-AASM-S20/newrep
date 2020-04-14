@@ -15,14 +15,17 @@ public class RController {
 	
 	public static ArrayList<Restaurant> getRList()
 	{
-		read and store( id, name, loc, contact) in variables 
+		id,name,loc,contact
+		id, name ,loc ,contact
+			
+		//read and store( id, name, loc, contact) in variables 
 	RLALA[i] = new Restaurant (id, name, loc, contact);
 		
 	}
 	
 	public void setRList(Restaurant W)
 	{W.ID;
-	 //reads to file in database
+	 file.outputstream(w)
 	}
 }
 	
