@@ -42,8 +42,14 @@ public class Controller extends HttpServlet {
 		
 		switch(requestType) {
 		  case "ViewRest":
-				ArrayList<Restaurant> RK=RController.getRList();
-				request.setAttribute("Rlist", RK);
+				ArrayList<int> Rids=RController.RDs;
+				ArrayList<String> RNames=RController.RNs;
+				ArrayList<String> RLocations=RController.RLs;
+				ArrayList<int> RCs=RController.RCs;
+				request.setAttribute("RIDList", Rids);
+				request.setAttribute("RNameList", RNames);
+				request.setAttribute("RLocationList", RLocations);
+				request.setAttribute("RContactList", RCs);
 		    break;
 		    
 		  case "login":
