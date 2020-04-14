@@ -36,20 +36,16 @@ public class Controller extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response, int id) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String requestType=request.getParameter("requestType");
 		
 		switch(requestType) {
 		  case "ViewRest":
-				ArrayList<int> Rids=RController.RDs;
-				ArrayList<String> RNames=RController.RNs;
-				ArrayList<String> RLocations=RController.RLs;
-				ArrayList<int> RCs=RController.RCs;
-				request.setAttribute("RIDList", Rids);
-				request.setAttribute("RNameList", RNames);
-				request.setAttribute("RLocationList", RLocations);
-				request.setAttribute("RContactList", RCs);
+
+				C.getRList(); //fills in arrays
+				ArrayList<int> RLs=C.obtaintheListafterSetup(); //might need a getter
+				request.setAttribute("RList1", RLs);
 		    break;
 		    
 		  case "login":
