@@ -44,7 +44,7 @@ public class Controller extends HttpServlet {
 		  case "ViewRest":
 
 				C.getRList(); //fills in arrays
-				ArrayList<int> RLs=C.obtaintheListafterSetup(); //might need a getter
+				ArrayList<Restaurant> RLs=C.obtaintheListafterSetup(); //might need a getter
 				request.setAttribute("RList1", RLs);
 		    break;
 		    
